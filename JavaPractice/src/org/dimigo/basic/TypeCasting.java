@@ -12,7 +12,8 @@ public class TypeCasting {
 		System.out.println("점포 내 직원 수 : " + people + "명");
 		System.out.println("점포 수 : " + String.format("%,d", num) + "개");
 		System.out.println();
-		System.out.println("연간 인건비 : " + String.format("%,d", money*12*people*num) + "원");
+		System.out.println("연간 인건비 : " + String.format("%,d", (long)money*12*(long)people*(long)num) + "원");
 	}
 
 }
+
