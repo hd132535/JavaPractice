@@ -7,7 +7,7 @@ package org.dimigo.oop;
  * 1. 개요 : 
  * 2. 작성일 : 2015. 4. 16.
  * </pre>
- * @author 신준섭
+ * @author 최수빈
  *
  */
 public class CarTest {
