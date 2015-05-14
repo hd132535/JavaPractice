@@ -31,6 +31,8 @@ public class Score {
 		System.out.print("영어 점수 입력 => ");
 		int eng = scanner.nextInt();
 		
+		System.out.println("");
+		
 		String sb = new StringBuilder()
 		.append("<< 점수 출력 >>\n")
 		.append("국어 점수 : ")
@@ -50,6 +52,7 @@ public class Score {
 		.append(" 점\n").toString();
 		
 		System.out.println(sb);
+		scanner.close();
 	}
 
 }
