@@ -24,7 +24,6 @@ public class Triangle extends Figure{
 		super(0,0);
 		this.width = width;
 		this.height = height;
-		calcArea();
 	}
 	
 	Triangle (int CenterX, int CenterY, int width, int height)
@@ -32,11 +31,18 @@ public class Triangle extends Figure{
 		super(CenterX, CenterY);
 		this.width = width;
 		this.height = height;
-		calcArea();	
 	}
 	
 	protected double calcArea()
 	{
-		return height * width * 0.5;
+		double res = 0.5 * width * height;
+		System.out.println("삼각형의 넓이 : " + String.format("%.1f", res));
+		return res;
+	}
+	
+	protected void printCenter()
+	{
+		System.out.print("삼각형 ");
+		super.printCenter();
 	}
 }

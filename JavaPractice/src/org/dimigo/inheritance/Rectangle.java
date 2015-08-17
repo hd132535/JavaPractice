@@ -24,7 +24,6 @@ public class Rectangle extends Figure{
 		super(0,0);
 		this.width = width;
 		this.height = height;
-		calcArea();
 	}
 	
 	public Rectangle(int CenterX, int CenterY, int width, int height)
@@ -32,10 +31,18 @@ public class Rectangle extends Figure{
 		super(CenterX, CenterY);
 		this.width = width;
 		this.height = height;
-		calcArea();
 	}
 	
-	protected double calcArea(){
-		return width * height;
+	protected double calcArea()
+	{
+		double res = width * height;
+		System.out.println("사각형의 넓이 : " + String.format("%.1f", res));
+		return res;
+	}
+	
+	protected void printCenter()
+	{
+		System.out.print("사각형 ");
+		super.printCenter();
 	}
 }

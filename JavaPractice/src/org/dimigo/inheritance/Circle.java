@@ -22,18 +22,24 @@ public class Circle extends Figure{
 	{
 		super(0,0);
 		this.radius = radius;
-		calcArea();
 	}
 	
 	public Circle(int centerX, int centerY, int radius)
 	{
 		super(centerX,centerY);
 		this.radius = radius;
-		calcArea();
 	}
 	
 	protected double calcArea()
 	{
-		return radius * radius * 3.14;
+		double res = Math.PI * radius * radius;
+		System.out.println("원의 넓이 : " + String.format("%.1f", res));
+		return res;
+	}
+	
+	protected void printCenter()
+	{
+		System.out.print("원 ");
+		super.printCenter();
 	}
 }
